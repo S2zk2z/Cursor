@@ -1,0 +1,73 @@
+---
+description: Куда писать заметки по аналоговой фотографии — Obsidian Vault, не папка проекта
+globs: "**/*"
+alwaysApply: true
+---
+
+# Obsidian: аналоговая фотография
+
+## Целевая папка (единственная)
+
+Все заметки, инструкции и картинки по плёнке создавать **только** здесь:
+
+```
+/Users/s2z303/Documents/Obsidian Vault/Analog photo/
+```
+
+Workspace Cursor (`Photografy/`) — для чата и скриптов, **не** для заметок Obsidian.
+
+## Запрещено как основное место
+
+- `Photografy/obsidian/` — черновик; в Obsidian **не** открывать
+- Имена вида `07 - …`, `08 - …`, `00 - Плёнка. Главная` — **не** использовать в vault
+
+## Имена файлов в vault
+
+| Что | Файл |
+|-----|------|
+| Главная | `Плёнка.md` |
+| Камера F-1 | `Canon F-1 + FD 50-1.4 SSC (Avito).md` |
+| Инструкция F-1 | `Canon F-1. Инструкция для новичка.md` |
+| FTb (архив) | `Canon FTb.md` |
+| Экспозиция | `Экспозиция на плёнке.md` |
+| Лабы | `Проявка и сканы.md` |
+| Чек-листы | `Чек-листы плёнки.md` |
+
+## Картинки
+
+```
+Analog photo/attachments/<папка>/*.png
+```
+
+В заметках: `![описание](attachments/f-1-avito-8030260917/top.png)`
+
+При новых фото — копировать в `attachments/` vault (не в `Photografy/obsidian/`).
+
+## Frontmatter
+
+```yaml
+---
+type: ref
+tags:
+  - ref
+  - photo
+parent: "[[Плёнка]]"
+---
+```
+
+## Ссылки
+
+Только `[[Имя заметки]]` как в существующих файлах vault — без номеров и без ` - ` в начале.
+
+## При правках
+
+1. Бэкап: `Имя_YYYYMMDD.md` или `Имя_YYYYMMDDb.md` (versioned-edits)
+2. Править файл в **Documents/Obsidian Vault/Analog photo/**
+3. Если sandbox Cursor не пишет в Documents — запросить `required_permissions: ["all"]`
+
+## Чеклист агента перед сохранением
+
+- [ ] Путь начинается с `/Users/s2z303/Documents/Obsidian Vault/Analog photo/`
+- [ ] Имя файла без нумерации `NN -`
+- [ ] Wiki-ссылки совпадают с именами в vault
+- [ ] Картинки в `attachments/` рядом с заметками

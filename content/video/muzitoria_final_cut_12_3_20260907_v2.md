@@ -134,5 +134,6 @@
 
 ## Версия файла
 
-- Файл: `content/video/muzitoria_final_cut_12_3_20260907.md`  
-- Первая версия пайплайна FCP 12.3. При правках — `_v2` / новая дата, оригинал не затирать.
+- Файл: `content/video/muzitoria_final_cut_12_3_20260907_v2.md`  
+- v2: как красить **весь ролик** сразу (Adjustment Clip / Compound / Paste Attributes).  
+- Бэкап: `muzitoria_final_cut_12_3_20260907.md`
